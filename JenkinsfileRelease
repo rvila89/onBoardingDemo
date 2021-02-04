@@ -1,0 +1,4 @@
+@Library('absis3-shared-lib')_
+
+pipelineRelease()
+

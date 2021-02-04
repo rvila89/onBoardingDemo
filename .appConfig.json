@@ -1,0 +1,36 @@
+{
+  "type": "react",
+  "location": "/*/",
+  "id": "onBoardingDemo",
+  "domElementId": "root",
+  "mode": "demo",
+  "containerService": {
+    "path": "/onBoardingDemo",
+    "name" : "@absis-app/onBoardingDemo",
+    "region": "content",
+    "view": false,
+    "peerDependencies": {}
+  },
+  "httpService": {
+    "app": {
+      "id": "onBoardingDemo",
+      "endpoint": "",
+      "port": 3000,
+      "headers": {}
+    },
+    "api": []
+  },
+  "routerService": {
+    "entryPoints": [
+      {
+        "alias": ["onBoardingDemo"],
+        "url": "/onBoardingDemo"
+      }
+    ],
+    "paths": {
+      "internal": [],
+      "external": []
+    }
+  },
+  "contextService": {}
+}
