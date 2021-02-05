@@ -5,14 +5,20 @@
   "author": "ABSIS3-NOW Team",
   "license": "ISC",
   "main": "src/index.js",
-  "files": ["src/**/!(*.test.js)", "dist"],
+  "files": [
+    "src/**/!(*.test.js)",
+    "dist"
+  ],
   "absis": {
     "alm": {
       "artifactType": "APP",
       "garComponentType": "CA.APP",
       "distFolder": "dist",
       "appName": "onBoardingDemo",
-      "channels": ["CO", "LO"]
+      "channels": [
+        "CO",
+        "LO"
+      ]
     },
     "project": {
       "type": "app",
@@ -27,10 +33,14 @@
     "@absis/absisDependency": "latest"
   },
   "eslintConfig": {
-    "extends": ["@absis/eslint-config-absis"]
+    "extends": [
+      "@absis/eslint-config-absis"
+    ]
   },
   "commitlint": {
-    "extends": ["@commitlint/config-conventional"]
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
   },
   "husky": {
     "hooks": {
@@ -39,10 +49,17 @@
     }
   },
   "lint-staged": {
-    "**/*.{js,css}": ["absis-lint js --max-warnings 0", "git add"]
+    "**/*.{js,css}": [
+      "absis-lint js --max-warnings 0",
+      "git add"
+    ]
   },
   "browserslist": {
-    "production": [">0.1%", "not dead", "not op_mini all"],
+    "production": [
+      ">0.1%",
+      "not dead",
+      "not op_mini all"
+    ],
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",

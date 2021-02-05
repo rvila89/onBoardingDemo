@@ -1,5 +1,6 @@
 import React from 'react';
 import { UiButton, UiImage } from '@absis-components/react';
+import { Link } from 'react-router-dom';
 import './styles/app.css';
 import logo from './assets/logo-caixa.png';
 
@@ -23,7 +24,7 @@ const App = () => (
     <UiButton className="ui-button" href="https://reactjs.org">
       Learn React
     </UiButton>
-
+    <Link to="/accountsList">Accounts List</Link>
     <p>
       Edit <code>src/App.js</code> and save to reload.
     </p>

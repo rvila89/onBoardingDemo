@@ -6,7 +6,7 @@
   "mode": "demo",
   "containerService": {
     "path": "/onBoardingDemo",
-    "name" : "@absis-app/onBoardingDemo",
+    "name": "@absis-app/onBoardingDemo",
     "region": "content",
     "view": false,
     "peerDependencies": {}
@@ -18,7 +18,22 @@
       "port": 3000,
       "headers": {}
     },
-    "api": []
+    "api": [
+      {
+        "alias": "accounts",
+        "path": "/absis3/accounts",
+        "verb": "get",
+        "demo": "mocks/accounts.json",
+        "secure": "api-gateway"
+      },
+      {
+        "alias": "accountDetail",
+        "path": "/absis3/accounts/:accountId",
+        "verb": "get",
+        "demo": "mocks/account.json",
+        "secure": "api-gateway"
+      }
+    ]
   },
   "routerService": {
     "entryPoints": [
@@ -28,7 +43,16 @@
       }
     ],
     "paths": {
-      "internal": [],
+      "internal": [
+        {
+          "path": "/accountsList",
+          "description": "List of my available accounts"
+        },
+        {
+          "path": "/accountsList/*",
+          "description": "Account detail"
+        }
+      ],
       "external": []
     }
   },
